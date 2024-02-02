@@ -67,14 +67,6 @@ function showSlide1(index) {
   odmslides[slideIndex1].classList.add("displaySlide");
 }
 
-function prevSlide1() {
-  removeActiveDot();
-  clearInterval(intervalId1);
-  slideIndex1--;
-  showSlide1(slideIndex1);
-  dots[slideIndex1].classList.add("active");
-}
-
 function nextSlide1() {
   removeActiveDot();
   slideIndex1++;
@@ -135,7 +127,6 @@ shortcutField.forEach((field, index) => {
       subMenu[index].classList.toggle("max-height");
       subIndex = index;
     }
-    console.log(subIndex);
   });
 });
 
